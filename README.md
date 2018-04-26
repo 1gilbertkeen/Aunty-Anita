@@ -7,11 +7,11 @@ This is a recreation of Aunty Anita Restaurant Webpage
 
 ## Set Up Instructions
 ```
-
+git clone https://github.com/theekeen/Aunty-Anita.git
 ```
 open index.html
 
-## Link to the site: [Github](https:theekeen.github.io/Aunty-Anita)
+## Link to the site: [Github](https://theekeen.github.io/Aunty-Anita)
 
 ## Technologies used
 HTML, CSS and Bootstrap
