@@ -1,13 +1,7 @@
 /* Header Styles */
-.logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 8em;
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 0;
-   text-align: center;
+header {
+    background-image:url("../Images/backgrounds/landing.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
