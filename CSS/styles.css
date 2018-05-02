@@ -69,3 +69,8 @@ header {
 .inline-image {
     height: 200px;
 }
+.center:hover {
+    background-image:none;
+    color:black;
+    background-color:white;
+}
