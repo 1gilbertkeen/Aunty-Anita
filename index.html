@@ -6,6 +6,7 @@
     <title>Anita's Kitchen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="./CSS/styles.css"/>
     <link rel="icon" href="./Images/logoBig.png"/>
@@ -14,14 +15,12 @@
     <div class="container-fluid">
         <!--Header and Nav Bar-->
         <header class="top">
-            <div class="sidebar container-fluid" id="sidebar">
-            <span id="header"></span>
-            <span style="font-size: 40px;" id="close" onclick="doClose()">&times;</span>
+            <i class="fa fa-align-justify icon"></i>
+            <div class="sidebar">
             <a href="#">Menu</a><br>
             <a href="#">Contacts</a><br>
             <a href="#">Events</a>
             </div>
-            <span class="icon" onclick="doOpen()">&#97776</span>
             <div class="head" id="logoBig">
             <img src="./Images/logoBig.png" alt="Aunty Anita's logo">
             <p>We provide the best food at the <b>Right Price<b></p>
@@ -70,7 +69,7 @@
                              reprehenderit accusamus animi amet accusantium qui 
                              inventore officiis eum, repellendus, error perspiciatis 
                              maiores recusandae!</p>
-                             <a class="orange btn btn-lg"><span style="color: #F15A29;font-size: 1em">View Gallery</span></a>
+                             <a class="orange btn btn-lg"><span style="color: #F15A29;font-size: 1em">View Gallery</span><img src="./Images/next.jpeg" alt="next arrow image" class="arrow-image"></a>
                         </div>
                     </div>
                 </div>
@@ -84,7 +83,7 @@
                             voluptate consequuntur corporis ad minima doloremque,
                              quidem itaque reprehenderit repudiandae officia rem
                               tempora quam.</p>
-                            <a class="orange btn btn-lg"><span style="color: #F15A29;font-size: 1em">View Gallery</span></a>
+                            <a class="orange btn btn-lg"><span style="color: #F15A29;font-size: 1em">View Gallery</span><img src="./Images/next.jpeg" alt="next arrow image" class="arrow-image"></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
@@ -100,7 +99,7 @@
                 </div>
             </article>
             <aside>
-                <div class="content">
+                <div class="content row">
                     <div class="col-lg-3 col-md-3 col-sm-6">
                     <p style="color:orange">Fast Food</p>
                     </div>
@@ -113,25 +112,23 @@
                     <div class="col-lg-3 col-md-3 col-sm-6">
                     <p>Rice</p>
                     </div>
-                </div>
-                <div class="items">
+                    <div class="items row">
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <span style="margin-top: 20%;color: orange; font-size: 1.4em; margin-right:5%;"></span>
-                        <img src="./Images/fastfood/chickenBurger.jpg" alt="Chicken Burger image">
-                        <br>
+                        <img src="./Images/fastfood/chickenBurger.jpg" alt="Chicken Burger image" width="85%" align="right">
+                        <br clear="left">
                         <p>Chicken Burger</p>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12"> 
-                        <img src="./Images/fastfood/beefBurger.jpg" alt="image of Beef Burger" width="70%">
+                        <img src="./Images/fastfood/beefBurger.jpg" alt="image of Beef Burger" width="85%">
                         <p>Beef Burger</p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <span style="margin-top: 20%;color: orange; font-size: 1.4em; margin-right:5%;"></span>
-                        <img src="./Images/fastfood/chickenPizza.jpg">
-                        <br>
-                        <p>Chicken Pizza</p>
+                    <div class="col-lg-4 col-md-4 col-sm-12">   
+                        <img src="./Images/fastfood/chickenPizza.jpg" alt="Image of Chicken Pizza" width="85%" align="left">
+                        <br clear="right">
+                        <p>Chicken Pizza</p>   
+                    </div> 
                     </div>
-                </div>
+                    </div>
             </aside>
         </section>
         <footer>
@@ -143,12 +140,12 @@
                 <p>Great food, menu is awesome their food are not only
                     great but also in the right price. I'll highly recommend them.</p>
                 <div class="row">
-                    <div style="margin-left: 30%; margin-right: 30%; width: 40%;" id="glyorange">
-                        <span class="octicon"></span>
+                    <div style="margin-left: 20%; margin-right: 20%; width: 60%;" id="faorange">
+                        <i class="fa fa-chevron-left"></i>
                         <img src="./Images/customers/p1.png" alt="Mary's image">
                         <img src="./Images/customers/p2.png" alt="James image">
                         <img src="./Images/customers/p3.png" alt="John's Image">
-                        <span class="octicon"></span>
+                        <i class="fa fa-chevron-right"></i>
                     </div>
                 </div>
             </div>
@@ -170,7 +167,7 @@
         <p style="font-weight: bold;">Get our daily food items delivered to your email</p>
         <div style="margin-left: 35%; margin-right: 35%;width: 30%;">
             <form>
-                <input type="email" placeholder="Your Email" name="EMAIL" class="required email" id="Email">
+                <input type="email" placeholder="Your Email" name="email" class="required email" id="email">
                 <input type="submit" value="Subscribe" id="subscribe" class="button">
            </form>    
         </div>
@@ -191,7 +188,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118990189-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){dataLayer.push(arguments) ;}
   gtag('js', new Date());
 
   gtag('config', 'UA-118990189-1');
