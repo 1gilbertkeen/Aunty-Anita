@@ -13,14 +13,16 @@
 <body>
     <div class="container-fluid">
         <!--Header and Nav Bar-->
-        <header>
-            <div class="container-fluid">
+        <header class="top">
+            <div class="sidebar container-fluid" id="sidebar">
             <span id="header"></span>
+            <span style="font-size: 40px;" id="close" onclick="doClose()">&times;</span>
             <a href="#">Menu</a><br>
             <a href="#">Contacts</a><br>
             <a href="#">Events</a>
             </div>
-            <div class="head">
+            <span class="icon" onclick="doOpen()">&#97776</span>
+            <div class="head" id="logoBig">
             <img src="./Images/logoBig.png" alt="Aunty Anita's logo">
             <p>We provide the best food at the <b>Right Price<b></p>
             </div>
@@ -34,17 +36,17 @@
                 </div>
             </div>
             <div class=" top col-sm-6 col-md-3 col-lg-3">
-                <div class="breakfast center inline-image">
+                <div class="breakfast center inline-image all">
                 <p>Breakfast</p>
                 </div>    
             </div>
             <div class=" top  col-sm-6 col-md-3 col-lg-3 center">
-                <div class="lunch center inline-image">
+                <div class="lunch center inline-image all">
                 <p>Lunch</p>  
                 </div>
             </div>
             <div class=" top col-sm-6 col-md-4 col-lg-3 center">
-                <div class="dinner center inline-image">
+                <div class="dinner center inline-image all">
                 <p>Dinner</p>
                 </div> 
             </div>
@@ -168,8 +170,8 @@
         <p style="font-weight: bold;">Get our daily food items delivered to your email</p>
         <div style="margin-left: 35%; margin-right: 35%;width: 30%;">
             <form>
-                <input type="email" placeholder="Your Email">
-                <input type="submit" value="Subscribe">
+                <input type="email" placeholder="Your Email" name="EMAIL" class="required email" id="Email">
+                <input type="submit" value="Subscribe" id="subscribe" class="button">
            </form>    
         </div>
     </div>   
@@ -185,6 +187,16 @@
                 <p style="color:black;font-size:0.5em;">2016 Menu Restaurant</p>
         </div>
     </div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118990189-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-118990189-1');
+</script>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
